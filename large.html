@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function abc()
+{
+var a=[9,4,7,2,8,1,6,3,5];
+var k;
+a.sort();
+document.getElementById("demo").innerHTML=a;
+for(var i=0;i<a.length-1;i++)
+{
+for(var j=i+1;j<a.length;j++)
+{
+if(a[i]<a[j])
+k=a[j];
+else
+continue;
+}
+}
+alert(k);
+}
+</script>
+</head>
+<body>
+<button onclick="abc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function abc()
+{
+var a=[1,2,3];
+var b=[4,3,2];
+var c=a.concat(b);
+var s=new Set(c);
+var k=[...s];
+document.write(k);
+}
+</script>
+</head>
+<body>
+<button onclick="abc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>

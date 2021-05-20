@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function abc()
+{
+var a=[1,5,7,2,4];
+var j;
+a.sort();
+document.getElementById("demo").innerHTML=a;
+for(i=0;i<a.length;i++)
+{
+a[j++]=a[i]+1;
+
+alert(a[j]);
+}
+}
+</script>
+</head>
+<body>
+<button onclick="abc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>

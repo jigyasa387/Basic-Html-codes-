@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+var a=[1,2,3,4,5];
+document.write("Original Array:"+a+"<br>");
+var x=4;
+var pos=0;
+var temp=a[x];
+for(var i=x;i>pos;i--)
+{
+a[i]=a[i-1];
+}
+a[pos]=temp;
+document.write("After move:"+a+"<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

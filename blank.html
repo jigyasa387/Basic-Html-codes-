@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var x=0;
+var array=Array();
+function add()
+{
+array[x]=document.getElementById("a").value;
+window.alert("Element:"+array[x]+"added at index"+x);
+x++;
+}
+function display()
+{
+var e=" ";
+for(var i=0;i<array.length;i++)
+{
+e+="Element"+i+"="+array[i]+"<br>";
+}
+document.getElementById("demo").innerHTML=e;
+}
+</script>
+</head>
+<body>
+<input type="text" id="a"></input>
+<button value="add" id="b" onclick="add()">Add</button>
+<button value="display" id="c" onclick="display()">Display</button>
+<p id="demo"></p>
+</body>
+</html>

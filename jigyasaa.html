@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+var rows=prompt("how many rows?");
+var cols=prompt("how many cols?");
+if(rows==" " || rows== null)
+rows=5;
+if(cols==" "|| cols==null)
+cols=5;
+createTable(rows,cols);
+function createTable(rows,cols)
+{
+var k=1;
+var j="<table border='1' width='500' cellspacing='0' cellpadding='5'>";
+for(var i=1;i<=rows;i++)
+{
+j=j+"<tr>";
+while(k<=cols)
+{
+j=j+"<td>"+i*k+"</td>";
+k=k+1;
+}
+j=j+"</tr>";
+k=1;
+}
+k=k+"</table>";
+document.write(output);
+} 
+</script>
+</head>
+<body>
+</body>
+</html>
